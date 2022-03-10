@@ -1,5 +1,7 @@
 # exo-film
 
+liste de film avec swagger et pagination
+
 npm i
 
 npm i -g sequelize
