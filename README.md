@@ -1,6 +1,6 @@
 # exo-film
 
-liste de film avec swagger et pagination
+liste de film avec leur catégories, avec swagger et pagination + upload de fichier
 
 npm i
 
