@@ -10,6 +10,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var categoriesRouter = require('./routes/categories');
 var filmsRouter = require('./routes/films');
 var pjson = require('./package.json');
 
@@ -24,9 +25,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+global.__domainUri = "http://localhost:3000";
 
 app.use('/api', filmsRouter);
-
+app.use('/api', categoriesRouter);
 try {
   sequelize.authenticate();
   console.log('Connection has been established successfully.');

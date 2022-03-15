@@ -12,6 +12,7 @@ const date3 = new Date(2003, 12, 17);
       date:date1,
       note:4,
       duration:153,
+      url:"",
       createdAt: new Date(),
       updatedAt: new Date()
   }, {
@@ -20,6 +21,7 @@ const date3 = new Date(2003, 12, 17);
     date:date2,
     note:5,
     duration:140,
+    url:"",
     createdAt: new Date(),
     updatedAt: new Date()
   }, {
@@ -28,6 +30,7 @@ const date3 = new Date(2003, 12, 17);
     date:date3,
     note:4,
     duration:201,
+    url:"",
     createdAt: new Date(),
     updatedAt: new Date()
   }]);
